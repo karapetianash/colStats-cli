@@ -85,3 +85,12 @@ func BenchmarkRun(b *testing.B) {
 		}
 	}
 }
+
+func BenchmarkMin(b *testing.B) {
+	data := []float64{0, 3, 2, 5, 1, -2, 53, 5, 23, 59, 34, 8, 65, 4, 3, 34, -35, -345, -6, 23, -54, 2, -63, -124, -45, 4, 543, 64, -634}
+
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		min(data)
+	}
+}
