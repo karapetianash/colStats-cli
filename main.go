@@ -41,6 +41,10 @@ func run(filenames []string, op string, column int, out io.Writer) error {
 		opFunc = min
 	case "max":
 		opFunc = max
+	case "len":
+		opFunc = length
+	case "unique":
+		opFunc = unique
 	default:
 		return fmt.Errorf("%w: %s", ErrInvalidOperation, op)
 	}

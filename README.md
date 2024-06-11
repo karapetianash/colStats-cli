@@ -20,7 +20,9 @@ will support two operations:\
 `sum`, which calculates the sum of all values in the column,\
 `avg`, which determines the average value of the column,\
 `min`, which finds the minimum value of the column,\
-`max`, which finds the maximum value of the column.
+`max`, which finds the maximum value of the column,\
+`len`, which finds the number of records in file,\
+`unique`, which finds the number of unique records.
 
 In addition to the two optional flags, this tool accepts any number of file
 names to process. If the user provides more than one file name, the tool

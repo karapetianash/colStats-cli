@@ -20,6 +20,19 @@ func sum(data []float64) float64 {
 	return s
 }
 
+func unique(data []float64) float64 {
+	uniq := make(map[float64]bool)
+	for _, d := range data {
+		uniq[d] = true
+	}
+
+	return float64(len(uniq))
+}
+
+func length(data []float64) float64 {
+	return float64(len(data))
+}
+
 func avg(data []float64) float64 {
 	return sum(data) / float64(len(data))
 }
